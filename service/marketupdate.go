@@ -12,7 +12,7 @@ type marketUpdatesService struct {
 	log     logger.ILogger
 }
 
-func NewmarketUpdatesService(storage storage.IMarketNewsStorage, log logger.ILogger) marketUpdatesService {
+func NewmarketUpdatesService(storage storage.IMarketUpdatesStorage, log logger.ILogger) marketUpdatesService {
 	return marketUpdatesService{
 		storage: storage,
 		log:     log,

@@ -15,7 +15,7 @@ type IStorage interface {
 	Porfolios() IPortfoliosStorage
 	TradeConfirmations() ITradeConfirmationsStorage
 	MarketNews() IMarketNewsStorage
-	AccountInforamtion() IAccountINforamtionStorage
+	AccountInforamtion() IAccountInforamtionStorage
 	FundTransfers() IFundTransfersStorage
 }
 //users 1
@@ -96,7 +96,7 @@ type IMarketNewsStorage interface {
 }
 
 // accountinformation9
-type IAccountINforamtionStorage interface {
+type IAccountInforamtionStorage interface {
 	Create(context.Context, models.CreateAccountInformation) (string, error)
 	GetByID(context.Context, models.PrimaryKey) (models.AccountInformation, error)
 	GetList(context.Context, models.GetListRequest) (models.AccountInformationResponse, error)

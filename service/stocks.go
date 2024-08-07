@@ -12,11 +12,12 @@ type stocksService struct {
 	log     logger.ILogger
 }
 
+
 func NewStocksService(storage storage.IStocksStorage, log logger.ILogger) stocksService {
-	return stocksService{
-		storage: storage,
-		log:     log,
-	}
+    return stocksService{
+        storage: storage,
+        log:     log,
+    }
 }
 
 func (s stocksService) Create(ctx context.Context, stock models.CreateStock) (models.Stock, error) {

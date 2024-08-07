@@ -15,7 +15,7 @@ type accountInformationRepo struct {
 	log logger.ILogger
 }
 
-func NewAccountInforamtionRepo(db *pgxpool.Pool, log logger.ILogger) storage.IAccountINforamtionStorage {
+func NewAccountInforamtionRepo(db *pgxpool.Pool, log logger.ILogger) storage.IAccountInforamtionStorage {
 	return &accountInformationRepo{
 		db:  db,
 		log: log,

@@ -46,7 +46,7 @@ func New(storage storage.IStorage, log logger.ILogger) Service {
 	services.portfoliosService = NewportfoliosService(storage, log)
 	services.tradeConfirmationsService = NewtradeConfirmationsService(storage, log)
 	services.marketNewsService = NewmarketNewsService(storage, log)
-	services.accountInforamtionService = NewaccountInforamtionServiceService(storage, log)
+	services.accountInforamtionService = NewAccountInforamtionServiceService(storage, log)
 	services.fundTransfersService = NewfundTransfersService(storage, log)
 	services.authService = NewAuthService(storage, log)
 

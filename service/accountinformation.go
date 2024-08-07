@@ -8,11 +8,11 @@ import (
 )
 
 type accountInforamtionService struct {
-	storage storage.IAccountINforamtionStorage
+	storage storage.IAccountInforamtionStorage
 	log     logger.ILogger
 }
 
-func NewaccountInforamtionServiceService(storage storage.IAccountINforamtionStorage, log logger.ILogger) accountInforamtionService {
+func NewAccountInforamtionServiceService(storage storage.IAccountInforamtionStorage, log logger.ILogger) accountInforamtionService {
 	return accountInforamtionService{
 		storage: storage,
 		log:     log,

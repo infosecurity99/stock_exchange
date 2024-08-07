@@ -133,7 +133,7 @@ func (s Store) MarketNews() storage.IMarketNewsStorage{
 }
 
 //AccountInforamtion9
-func (s Store) AccountInforamtion() storage.IAccountINforamtionStorage{
+func (s Store) AccountInforamtion() storage.IAccountInforamtionStorage{
 	return NewAccountInforamtionRepo(s.pool, s.log)
 }
 
